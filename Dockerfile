@@ -27,7 +27,9 @@ RUN ln -snf /bin/bash /bin/sh
 
 USER jovyan
 
+RUN pip install --upgrade flask
 RUN pip install --upgrade keras
 RUN pip install --upgrade altair
+RUN pip install --upgrade requests
 RUN pip install --upgrade tensorflow
 RUN pip install --upgrade pandas-datareader
